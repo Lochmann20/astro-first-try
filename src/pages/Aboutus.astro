@@ -4,11 +4,12 @@ import MainLayout from "../Layout/MainLayout.astro";
 import Card from "../components/Card.astro";
 const showOfferBar = true;
 ---
+
+
 <MainLayout title="Om Os">
 		<h2>Her er About Us</h2>
-        {showOfferBar && <p>TILBUD!!!!</p>}
         <Card header="Cykle" />
-        <Card header="Bil" soldOut={true} />
+        <Card header="Bil" />
         <Card header="Båd" />
         <Card header="Rulleskøjter" />
 </MainLayout>

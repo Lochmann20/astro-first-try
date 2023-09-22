@@ -8,3 +8,80 @@
 img {
     max-width: 100%;
 }
+/* Denne gør at wireframe bliver delt op i rows*/
+body {
+	background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/**************stiky head************************/
+.top-container {
+	background-color: #ffffff;
+	padding: 30px;
+	text-align: center;
+  }
+
+  .header {
+	padding: 15px 5px;
+	background: #1b1b1b;
+	color: #f1f1f1;
+  }
+  
+  .content {
+	padding: 16px;
+  }
+  
+  .sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  
+  .sticky + .content {
+	padding-top: 102px;
+  }
+
+/******************************/
+
+  
+  a {
+	text-decoration: none;
+	color: white;
+	display: flex;
+	justify-content: space-evenly;
+  }
+  .content{
+	background-color: #252525;
+  }
+  h3{
+	color: white;
+    font-size: 1.5rem;
+ 
+  }
+
+  .navBar{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .playlister {
+    display: flex;
+  }
+
+  .PlaylisteNr {
+    background-color: #2d2d2d;
+    padding: 18px;
+    margin-left: 25px;
+  }
+  .PlaylistText {
+    color: white;
+  }
+
+  .visAlle{
+    display: flex;
+    justify-content: space-between
+  }
+

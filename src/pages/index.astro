@@ -1,11 +1,104 @@
 ---
 import "../Styles/style.css";
 import MainLayout from "../Layout/MainLayout.astro";
-import Button from "../components/Button.astro";
-
 ---
-<MainLayout title="Hjem">
-			<Button variant="primary" size="small">TEXT</Button>
-			<Button variant="secondary" size="medium">TEXT</Button>
-			<Button variant="secondary" size="large">TEXT</Button>
+
+<MainLayout>
+	<div class="header" id="myHeader">
+		<a href="/#">Tilmeld dig</a>
+		<a href="/#">Log på</a>
+	  </div>
+	  
+	<div class="content">
+	  <div class="visAlle">
+	  <strong><h3>Spotify-playlister</h3></strong>
+	  <a href="/#">Vis alle</a>
+	  </div>
+
+	  <div class="playlister">
+	  <div class="PlaylisteNr"><img src="svg/billede1.jpg" alt="">
+	  <p class="PlaylistText">Todays Top Hits</p>
+	  <p class="PlaylistText">Zach Bryan & Kacey</p>
+	  <p class="PlaylistText">Musgraves are on top of...</p>
+	  </div>
+
+	  <div class="PlaylisteNr"><img src="svg/billede2.jpg" alt="">
+      <p class="PlaylistText">RapCaviar</p>
+	  <p class="PlaylistText">New music from Doja Cat,</p>
+      <p class="PlaylistText">Lil Tecca and Moneybag...</p></div>
+
+	  <div class="PlaylisteNr"><img src="svg/billede3.jpg" alt="">
+		<p class="PlaylistText">All Out 2010s</p>
+		<p class="PlaylistText">The biggest songs to the</p>
+		<p class="PlaylistText">2010s</p>
+	  </div>
+
+	  <div class="PlaylisteNr"><img src="svg/billede4.jpg" alt="">
+		<p class="PlaylistText">Rock Classics</p>
+		<p class="PlaylistText">Rock legends & epic songs</p>
+		<p class="PlaylistText">that continueto inspire..</p>
+	  </div>
+
+	  <div class="PlaylisteNr"><img src="svg/billede5.jpg" alt="">
+		<p class="PlaylistText">Chill Hits</p>
+		<p class="PlaylistText">Kick back to the best new</p>
+		<p class="PlaylistText">and recent chill hits.</p>
+	  </div>
+	  </div>
+	</div>
+
+	<div class="content">
+		<div class="visAlle">
+		<strong><h3>Fokus</h3></strong>
+		<a href="/#">Vis alle</a>
+	</div>
+		<div class="playlister">
+		<div class="PlaylisteNr"><img src="svg/billede6.jpg" alt="">
+			<p class="PlaylistText">Todays Top Hits</p>
+			<p class="PlaylistText">Zach Bryan & Kacey</p>
+			<p class="PlaylistText">Musgraves are on top of...</p>
+		</div>
+
+		<div class="PlaylisteNr"><img src="svg/billede7.jpg" alt="">
+			<p class="PlaylistText">Todays Top Hits</p>
+			<p class="PlaylistText">Zach Bryan & Kacey</p>
+			<p class="PlaylistText">Musgraves are on top of...</p>
+		</div>
+
+		<div class="PlaylisteNr"><img src="svg/billede8.jpg" alt="">
+			<p class="PlaylistText">Todays Top Hits</p>
+			<p class="PlaylistText">Zach Bryan & Kacey</p>
+			<p class="PlaylistText">Musgraves are on top of...</p>
+		</div>
+
+		<div class="PlaylisteNr"><img src="svg/billede9.jpg" alt="">
+			<p class="PlaylistText">Todays Top Hits</p>
+			<p class="PlaylistText">Zach Bryan & Kacey</p>
+			<p class="PlaylistText">Musgraves are on top of...</p>
+		</div>
+
+		<div class="PlaylisteNr"><img src="svg/billede10.jpg" alt="">
+			<p class="PlaylistText">Todays Top Hits</p>
+			<p class="PlaylistText">Zach Bryan & Kacey</p>
+			<p class="PlaylistText">Musgraves are on top of...</p>
+		</div>
+		</div>
+	  </div>
+
+	  
 </MainLayout>
+
+<script>
+	window.onscroll = function() {myFunction()};
+	
+	var header = document.getElementById("myHeader");
+	var sticky = header.offsetTop;
+	
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+		header.classList.add("sticky");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
+</script>
