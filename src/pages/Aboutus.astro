@@ -3,13 +3,103 @@ import "../Styles/style.css";
 import MainLayout from "../Layout/MainLayout.astro";
 import Card from "../components/Card.astro";
 const showOfferBar = true;
+
+const pageTitle = "About Me";
+
+const identity = {
+  firstName: "Sarah",
+  country: "Canada",
+  occupation: "Technical Writer",
+  hobbies: ["photography", "birdwatching", "baseball"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+
+const happy = true;
+const finished = false;
+const goal = 3;
 ---
 
 
-<MainLayout title="Om Os">
-		<h2>Her er About Us</h2>
-        <Card header="Cykle" />
-        <Card header="Bil" />
-        <Card header="Båd" />
-        <Card header="Rulleskøjter" />
+<MainLayout>
+	<div class="header" id="myHeader">
+		<div class="backForward-TilmeldLogpå">
+	    <div class="backForward">
+	    <a class="back" href="/#"><img src="svg/back-btn.svg" alt="" width="25px"></a>
+		<a class="forward" href="/#"><img src="svg/forward-btn.svg" alt="" width="25px"></a>
+		</div>
+
+		<div class="TilmeldLogpå">
+		<a class="tilmeld" href="/#">Tilmeld dig</a>
+		<a class="logPå" href="/#">Log på</a>
+	    </div>
+	    </div>
+
+	<div class="content">
+	  <div class="visAlle">
+	  <strong><h3>Udforsk alle</h3></strong>
+	  </div>
+
+	  <div class="playlister">
+	  <div class="PlaylisteNr"><img src="svg/billede1.jpg" alt="">
+	  <p class="PlaylistText">Todays Top Hits</p>
+	  </div>
+
+	  <div class="PlaylisteNr"><img src="svg/billede2.jpg" alt="">
+      <p class="PlaylistText">RapCaviar</p>
+      </div>
+
+	  <div class="PlaylisteNr"><img src="svg/billede3.jpg" alt="">
+		<p class="PlaylistText">All Out 2010s</p>
+	  </div>
+
+	  <div class="PlaylisteNr"><img src="svg/billede4.jpg" alt="">
+		<p class="PlaylistText">Rock Classics</p>
+	  </div>
+
+	  <div class="PlaylisteNr"><img src="svg/billede5.jpg" alt="">
+		<p class="PlaylistText">Chill Hits</p>
+	  </div>
+	  </div>
+	</div>
+    
+    <!--
+	<div class="content">
+		<div class="visAlle">
+		<strong><h3>Fokus</h3></strong>
+		<a href="/#">Vis alle</a>
+	</div>
+		<div class="playlister">
+		<div class="PlaylisteNr"><img src="svg/billede6.jpg" alt="">
+			<p class="PlaylistText">Todays Top Hits</p>
+			<p class="PlaylistText">Zach Bryan & Kacey</p>
+			<p class="PlaylistText">Musgraves are on top of...</p>
+		</div>
+
+		<div class="PlaylisteNr"><img src="svg/billede7.jpg" alt="">
+			<p class="PlaylistText">Todays Top Hits</p>
+			<p class="PlaylistText">Zach Bryan & Kacey</p>
+			<p class="PlaylistText">Musgraves are on top of...</p>
+		</div>
+
+		<div class="PlaylisteNr"><img src="svg/billede8.jpg" alt="">
+			<p class="PlaylistText">Todays Top Hits</p>
+			<p class="PlaylistText">Zach Bryan & Kacey</p>
+			<p class="PlaylistText">Musgraves are on top of...</p>
+		</div>
+
+		<div class="PlaylisteNr"><img src="svg/billede9.jpg" alt="">
+			<p class="PlaylistText">Todays Top Hits</p>
+			<p class="PlaylistText">Zach Bryan & Kacey</p>
+			<p class="PlaylistText">Musgraves are on top of...</p>
+		</div>
+
+		<div class="PlaylisteNr"><img src="svg/billede10.jpg" alt="">
+			<p class="PlaylistText">Todays Top Hits</p>
+			<p class="PlaylistText">Zach Bryan & Kacey</p>
+			<p class="PlaylistText">Musgraves are on top of...</p>
+		</div>
+		</div>
+	  </div>
+	</div> -->
 </MainLayout>
