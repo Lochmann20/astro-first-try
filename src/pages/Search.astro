@@ -1,0 +1,9 @@
+/* Topbar.astro*/
+---
+const {hasSearch} = Astro.props;
+---
+{hasSearch && <input type="text" />}
+
+
+/* serach.astro*/
+<MainLayout hasSearch={true} title="Search">...</MainLayout>

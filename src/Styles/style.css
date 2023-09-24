@@ -26,8 +26,9 @@ body {
 
   .header {
 	padding: 15px 5px;
-	background: #1b1b1b;
+	background: #101010;
 	color: #f1f1f1;
+    border-radius: 8px;
   }
   
   .content {
@@ -45,16 +46,52 @@ body {
   }
 
 /******************************/
-
+.backForward-TilmeldLogpå{
+    display: flex;
+    justify-content: space-between;
+}
+.backForward{
+    display: flex;
+    padding: 10px;
+    margin-top: -20px;
+    padding: 28px;
+    margin-left: 0px;
+}
+.back{
+    background-color: #2a2a2a;
+    border-radius: 20px;
+    margin-right: 17px;
+}
+.forward{
+    background-color: #2a2a2a;
+    border-radius: 27px;
+}
+.TilmeldLogpå{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+.tilmeld{
+    padding: 15px;
+}
+.logPå{
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 25px;
+    margin-left: 49px;
+    margin-right: 31px;
+    padding-right: 33px;
+    padding-left: 33px;
+}
   
   a {
 	text-decoration: none;
 	color: white;
 	display: flex;
-	justify-content: space-evenly;
   }
   .content{
-	background-color: #252525;
+    background: linear-gradient(to bottom,#202020 0%, black 100%);
   }
   h3{
 	color: white;
@@ -69,12 +106,14 @@ body {
 
   .playlister {
     display: flex;
+    margin-bottom: 188px;
   }
 
   .PlaylisteNr {
-    background-color: #2d2d2d;
     padding: 18px;
     margin-left: 25px;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #101010 0%, #202020 100%);
   }
   .PlaylistText {
     color: white;
@@ -85,3 +124,71 @@ body {
     justify-content: space-between
   }
 
+  /*******************NavigationBar********************/
+  .NavigationBar{
+    margin-left: 5px;
+    margin-right: 5px;
+    display: grid;
+  }
+
+
+
+
+  /************Navigation*********************/
+  .navBar{
+    background-color: #101010;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: grid;
+    padding: 10px;
+  }
+
+  .logPå{
+    background-color: white;
+  }
+
+
+
+  /*****************dit biblotek*******************/
+.headerNav{
+    background-color: #101010;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 45px;
+    height: 21.5em;
+}
+  .OpretPlayliste{
+    background-color: #202020;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.UdforskPodcasts{
+    background-color: #202020;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+h2{
+    color: white;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+h4{
+    color: white;
+    font-size: 1rem;
+    margin-top: 0px;
+}
+p{
+    color: white;
+}
+
+.bottomNav{
+    background-color: #101010;
+    display: grid;
+    margin-top: -122px;
+    border-radius: 8px;
+}

@@ -1,8 +1,53 @@
 ---
 
 ---
+<div class="NavigationBar">
 <nav class="navBar">
-    <a href="/#">Spotify</a>
-    <a href="/Aboutus">Hjem</a>
-    <a href="/#">Søg</a>
+    <a href="/#"><img src="svg/logo.svg" alt="" width="100px"></a>
+    <a href="/#"><img src="svg/home.svg" alt="" width="30px"></a>
+    <a href="/Aboutus"><img src="svg/search-icon.svg" alt="" width="30px"></a>
 </nav>
+
+
+<div class="headerNav" id="myHeader">
+    <h2><img src="svg/library-icon-filled.svg" alt="">Dit biblotek<img src="svg/create-icon.svg" alt="" width="20px"></h2>
+  
+  <div class="contentNav">
+    <div class="OpretPlayliste">
+    <h4>Opret din første playliste</h4>
+    <p>Det er nemt - vi skal nok hjælpe dig</p>
+    <a href="/#">Opret playliste</a>
+    </div>
+
+    <div class="UdforskPodcasts">
+    <h4>Lad os finde nogle podcasts, du kan følge</h4>
+    <p>Vi holder dig orienteret om nye episoder</p>
+    <a href="/#">Udforsk podcasts</a>   
+    </div>
+  </div>
+</div>
+
+<div class="bottomNav">
+    <a href="/#">Cookies</a>
+    <a href="/#">Dansk</a>
+</div>
+</div>
+
+<script>
+	window.onscroll = function() {myFunction()};
+	
+	var headerNav = document.getElementById("myHeader");
+	var sticky = headerNav.offsetTop;
+	
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+		headerNav.classList.add("sticky");
+	  } else {
+		headerNav.classList.remove("sticky");
+	  }
+	}
+</script>
+
+
+
+

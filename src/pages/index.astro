@@ -5,10 +5,18 @@ import MainLayout from "../Layout/MainLayout.astro";
 
 <MainLayout>
 	<div class="header" id="myHeader">
-		<a href="/#">Tilmeld dig</a>
-		<a href="/#">Log på</a>
-	  </div>
-	  
+		<div class="backForward-TilmeldLogpå">
+	    <div class="backForward">
+	    <a class="back" href="/#"><img src="svg/back-btn.svg" alt="" width="25px"></a>
+		<a class="forward" href="/#"><img src="svg/forward-btn.svg" alt="" width="25px"></a>
+		</div>
+
+		<div class="TilmeldLogpå">
+		<a class="tilmeld" href="/#">Tilmeld dig</a>
+		<a class="logPå" href="/#">Log på</a>
+	    </div>
+	    </div>
+
 	<div class="content">
 	  <div class="visAlle">
 	  <strong><h3>Spotify-playlister</h3></strong>
@@ -47,6 +55,7 @@ import MainLayout from "../Layout/MainLayout.astro";
 	  </div>
 	</div>
 
+<!--
 	<div class="content">
 		<div class="visAlle">
 		<strong><h3>Fokus</h3></strong>
@@ -84,21 +93,8 @@ import MainLayout from "../Layout/MainLayout.astro";
 		</div>
 		</div>
 	  </div>
+	</div> -->
 
 	  
 </MainLayout>
 
-<script>
-	window.onscroll = function() {myFunction()};
-	
-	var header = document.getElementById("myHeader");
-	var sticky = header.offsetTop;
-	
-	function myFunction() {
-	  if (window.pageYOffset > sticky) {
-		header.classList.add("sticky");
-	  } else {
-		header.classList.remove("sticky");
-	  }
-	}
-</script>
